@@ -49,7 +49,7 @@ class Game:
 
     def __init__(self):
         # Mixer VOR pygame.init() konfigurieren, sonst werden Standardwerte verwendet
-        # 44100 = Sample-Rate, -16 = 16-bit signed, 2 = Stereo, 512 = Buffer (klein = wenig Verzögerung)
+        # 44100 = Sample-Rate, -16 = 16-bit signed, 2 = Stereo, 512 = Buffer (klein = wenig Verzögekdkg)g)
         pygame.mixer.pre_init(44100, -16, 2, 512)
 
         # Startet alle pygame-Module auf einmal (Display, Events, Mixer, ...)
