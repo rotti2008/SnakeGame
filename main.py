@@ -30,7 +30,7 @@ def create_eat_sound():
         val = int(math.sin(2 * math.pi * frequency * i / sample_rate) * 32767)
         buf[2 * i] = val      # linker Kanal
         buf[2 * i + 1] = val  # rechter Kanal
-
+    print(type(pygame.mixer.Sound(buffer=buf)))  # Debug: Überprüfen des Sound-Objekttyps
     return pygame.mixer.Sound(buffer=buf)
 
 
